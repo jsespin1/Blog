@@ -1,0 +1,14 @@
+.row
+  .col-sm-3
+  .col-sm-6
+    - @posts.each do |post|
+      %h2= link_to post.title, post
+      %p= post.content
+      %p
+        = link_to "Editar", edit_post_path(post)
+        |
+        \#{link_to "Eliminar", post, :method => :delete, data: {confirm: "Seguro?" }}
+      %hr/
+    %p= link_to "Add a New Post", new_post_path
+  .col-sm-3
+%h1
