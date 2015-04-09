@@ -9,6 +9,11 @@ gem 'autoprefixer-rails'
 gem "haml-rails", ">= 0.5.3"
 gem "haml-underscore-template"
 
+#OTROS VARIOS
+gem 'responders', '~> 2.0'
+gem 'simple_form'
+
+#------------------------------------------------------------#
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'

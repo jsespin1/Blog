@@ -1,0 +1,6 @@
+<%= simple_form_for @post, remote: true do |f|   %>
+  <%= f.hidden_field :esconder, :value => "nada" %>
+  <%= f.input  :title                     %>
+  <%= f.input  :content                   %>
+  <%= f.button :submit                    %>
+<% end %>
